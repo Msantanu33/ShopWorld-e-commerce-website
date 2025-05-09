@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: hsl(0, 4%, 47%);
+    color: white;
+    padding: 15px 0;
+    width: 100%;
+    /* position: fixed; */
+    height: 60px;
+    margin-top: 0;
+}
+.logo {
+    color: hsl(0, 100%, 80%);
+    font-size: 24px;
+    display: flex;
+    
+}
+nav .logo {
+    float: left;
+    margin-left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar {
+    list-style: none;
+    float: right;
+    margin-right: 20px;
+    background-color: hsla(0, 9%, 9%, 0.682);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    max-width:max-content;
+}
+.banner-image{
+    width: 100%;
+    height: auto;
+    margin-top: 60px; /* To avoid overlap with the fixed header */
+    display: block;
+    background-color: hsl(0, 4%, 47%);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+}
+.navbar li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.btn {
+    background-color: #ff7d7d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.products {
+    padding: 20px;
+    
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    margin: 50px;
+    text-align: center;
+    padding: 10px;
+    overflow: hidden;
+
+    }
+.product-card button {
+        background-color: #ff7d7d;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    .product-card img {
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 10px;
+}
+
+.about, .contact {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+#contact-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.social-links{
+    display: flex;
+    
+    justify-content:space-evenly;
+    margin-top: 20px;
+    background-color: white;
+}
+footer {
+    background-color: hsl(0, 4%, 47%);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar {
+        float: none;
+    }
+
+    nav .logo {
+        float: none;
+        text-align: center;
+    }
+}
